@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Google</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="shortcut icon" type="image/x-icon" href="https://www.google.com/favicon.ico">
+		<style>
+			@media(max-width:660px){
+				#search-bar{
+					width:80%;
+				}
+				#footer-2{
+					flex-dersction:column;
+				}
+				.bottom{
+					padding:8px;
+				}
+				
+			}
+			html{
+				position:relative;
+				min-height:100%;
+			}
+			#top-bar{
+				display:block;
+			}
+			#footer-2{
+				display:block;
+			}
+			body{
+				font-family:arial,sans-serif;
+				line-height:1.6;
+				margin-bottom:100px;
+			}
+			a{
+				color:inherit;
+				text-decoration:none;
+			}
+			img{
+				display:block;
+				width:100%;
+			}
+			button{
+				border:none;
+				font-family:inherit;
+				font-size:inherit;
+				outline:none;
+				cursor:pointer;
+			}
+			input{
+				border:none;
+				font-family:inherit;
+				font-size:inherit;
+				outline:none;
+			}
+			.main{
+				display:flex;
+				flex-direction:column;
+				align-items:center;
+				justify-content:center;
+				height:55vh;
+				min-height:300px;
+				margin-top:50px;
+			}
+			#logo{
+				width:272px;
+				height:92px;
+				margin-bottom:26px;
+			}
+			#search-bar{
+				display:flex;
+				align-items:center;
+				justify-content:space-between;
+				width:580px;
+				height:35px;
+				padding:8px;
+				border:1px solid #ddd;
+				border-radius:30px;
+			}
+			#search-bar:hover,
+			.search-bar:focus-within{
+				border-color:white;
+				box-shadow:0 1px 6px rgba(32,33,36,0.28);
+			}
+			#search-icon{
+				width:25px;
+				height:25px;
+				margin-right:10px;
+				opacity:0.4;
+			}
+			.search-input{
+				width:100%;
+				height:100%;
+			}
+			#mic{
+				width:25px;
+				height:25px;
+				opacity:0.7;
+			}
+			.btn-search{
+				padding: 10px 20px;
+				border:1px solid transparent;
+				border-radius:5px;
+				background-color:#f8f9fa;
+				color:#3c4043;
+				font-size:14px;
+				align-items:center;
+				justify-content:center;
+				gap:12px;
+				margin-top:30px;
+				margin-left:10px;
+			}
+			.btn-search:hover{
+				border-color:#dadce0;
+				box-shadow:0 1px 1px rgb(0 0 0 / 10%);
+			}
+			.btn-search:focus{
+				border-color:blue;
+			}
+			.nav{
+				display:flex;
+				align-items:center;
+				justify-content:flex-end;
+				gap:10px;
+				margin-top:10px;
+				font-size:13px;
+			}
+			.nav-link{
+				opacity:0.85;
+			}
+			.nav-link:hover{
+				text-decoration:underline;
+			}
+			#apps{
+				display:flex;
+				align-items:center;
+				justify-content:center;
+				width:40px;
+				height:40px;
+				border-radius:50%;
+				background-color:transparent;
+				opacity:0.6;
+			}
+			#apps:hover{
+				background-color:#f0f0f0;
+				cursor:pointer;
+			}
+			#footer-2{
+				position:absolute;
+				bottom:0;
+				left:0;
+				display:flex;
+				align-items:center;
+				justify-content:space-evenly;
+				width:100%;
+				padding:1px;
+				border:1px solid #ddd;
+				background:#f2f2f2;
+				color:#70757a;
+				font-size:14px;
+			}
+			.bottom{
+				display:block;
+				padding:10px 10px 10px 10px;
+			}
+			.bottom:hover{
+				text-decoration:underline;
+			}
+		</style>
+	<head>
+	<body>
+		<nav class="nav">
+			<a class="nav-link" href="#">Gmail</a>
+			<a class="nav-link" href="#">Images</a>
+			<span id="apps" class="material-icons">apps</span>
+			<a class="nav-link" href="#">Sign in</a>
+		</nav>
+		<main class="main">
+		<div id="logo">
+			<img src="google-logo.png" alt="The google logo">
+		</div>
+		<div id="search-bar">
+			<span id="search-icon" class="material-icons">search</span>
+			<input class="search-input" type="text"/>
+			<span id="mic" class="material-icons">mic</span>
+		</div>
+		<div id="2-btn">
+			<a href="#"><button class="btn-search">Google Search</button></a>
+			<a href="#"><button class="btn-search">I'm Feeling Lucky</button></a>
+		</div>
+		</main>
+		<nav id="footer-2">
+			<a href="#" class="bottom">About</a>
+			<a href="#" class="bottom">Advertising</a>
+			<a href="#" class="bottom">Business</a>
+			<a href="#" class="bottom">How Search works</a>
+			<a href="#" class="bottom">Privacy</a>
+			<a href="#" class="bottom">Terms</a>
+			<a href="#" class="bottom">Settings</a>
+		</nav>
+</html>
